@@ -1,0 +1,46 @@
+---
+title: "JudgeMe Integration Guide (3 Steps ~ 1 minute)"
+description: "Integration Guide for judge-me review connection with ASA"
+sidebarTitle: "JudgeMe Review Integration Guide"
+---
+
+Follow these steps to connect Asa to your [Judge.Me](http://judge.me/) account using their official API. This allows Asa to read your product reviews and support features like curated, dynamic pros and cons — giving users honest feedback based on real reviews.
+
+### **Step 1: Open Judge.Me in Shopify**
+
+- In your Shopify dashboard, go to **Settings \> Apps and Sales Channels**.
+- Under **Installed Apps**, find **Judge.Me Reviews**.
+- Click it, then select **Open App** in the top-right corner.
+
+[Image of judge me in shopify app settings]
+
+### **Step 2: Get Your API Token and Subdomain**
+
+- In the **Judge.Me** sidebar, go to **General Settings** \> **Integrations** tab.
+- Click **View API Token** in the top-right corner.
+- Copy the following values:
+  - **Private API Token**
+  - **Shopify Subdomain** — this is the part before `.myshopify.com`
+
+Example URL to help you locate your subdomain: `https://admin.shopify.com/store/[your-shopify-subdomain]/apps/judgeme/shop/general_settings/integrations`
+
+[Image of judge me in shopify app settings]
+
+### **Step 3: Connect Judge.Me in Asa**
+
+- In your **Asa dashboard**, go to **Add Content**, open the **Integrations** tab, and click **Connect** under **Judge.me Product Reviews**.
+- Enter the required fields:
+  - **Shopify Subdomain**: Paste the subdomain you copied earlier
+  - **Private API Token**: Paste the token from Judge.Me
+- Click **Connect** to complete setup.
+
+Once connected, the status will display as **Connected**.
+
+[Image/video of judge me connect dialog]
+
+### **Notes**
+
+- Be sure to double-check your **Shopify subdomain** — it should exactly match the one used in your Shopify URL.
+- The **API token** provides secure, limited access to review data only — safe to use with Asa.
+
+If you run into any issues, contact us at [**help@alphablocks.ai**](mailto:help@alphablocks.ai) — we’re here to help.
