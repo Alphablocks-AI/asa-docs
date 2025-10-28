@@ -25,27 +25,33 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Integrations",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "integrations/shopify",
+              "integrations/notion",
+              "integrations/judge-me",
+              "integrations/yotpo",
+              "integrations/google-drive"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Resources",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "resources/asa-ai-resolutions",
+              "resources/plan-pricing",
+              "resources/best-practices",
+              "resources/trained-source-count"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Policies",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "policies/terms-and-conditions",
+              "policies/privacy-policy",
+              "policies/cookie-policy",
+              "policies/fair-usage",
+              "policies/limitations-of-asa",
+              "policies/refund-policy"
             ]
           }
         ]
@@ -117,9 +123,10 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://twitter.com/AlphablocksAI",
+      "linkedin": "https://www.linkedin.com/company/alphablocks",
+      "instagram": "https://www.instagram.com/alphablocksai/",
+      "whatsapp": "https://wa.me/message/7S6QJ422LPG7G1"
     }
   }
 }
