@@ -44,14 +44,14 @@
             ]
           },
           {
-            "group": "Policies",
+            "group": "Legal",
             "pages": [
-              "policies/terms-of-service",
-              "policies/privacy",
-              "policies/cookies",
-              "policies/fair-usage",
-              "policies/asa-limitations",
-              "policies/refunds"
+              "legal/terms-of-service",
+              "legal/privacy",
+              "legal/cookies",
+              "legal/fair-usage",
+              "legal/asa-limitations",
+              "legal/refunds"
             ]
           }
         ]
