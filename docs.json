@@ -46,12 +46,12 @@
           {
             "group": "Policies",
             "pages": [
-              "policies/terms-and-conditions",
-              "policies/privacy-policy",
-              "policies/cookie-policy",
+              "policies/terms-of-service",
+              "policies/privacy",
+              "policies/cookies",
               "policies/fair-usage",
-              "policies/limitations-of-asa",
-              "policies/refund-policy"
+              "policies/asa-limitations",
+              "policies/refunds"
             ]
           }
         ]
