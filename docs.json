@@ -17,11 +17,11 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "getting-started/add-manage-knowledge",
-              "getting-started/customize-assistant",
-              "getting-started/deploy",
-              "getting-started/manage-conversations",
-              "getting-started/analytics"
+              "get-started/add-manage-knowledge",
+              "get-started/customize",
+              "get-started/deploy",
+              "get-started/manage-conversations",
+              "get-started/analytics"
             ]
           },
           {
