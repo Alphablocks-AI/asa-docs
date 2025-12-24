@@ -1,17 +1,17 @@
 ---
-title: "Shopify Integration Guide - Admin API (~ 2 minutes)"
+title: "Shopify"
 description: "Integration guide to connect Asa with your shopify store"
 sidebarTitle: "Shopify"
 ---
 
-Follow these steps to connect Asa to your Shopify account using a **custom app with Admin API access**. This setup lets Asa learn from your product listings, metafields, blogs, pages, and store policies.
+Follow these steps to connect Asa to your Shopify account using a **custom app** with limited Admin API access. This setup lets Asa learn from your product listings, metafields, blogs, pages, and store policies.
 
 ### **Step 1: Create a Custom App in Shopify**
 
 - In your Shopify dashboard, go to **Settings** \> **Apps and Sales Channels** \> **Develop Apps** \> **Build apps in Dev Dashboard**.
 - Click **Create App** from the top right.
 
-_If you can’t access the _**_Dev Dashboard_**_ section, you may not have the required setup/permissions. Check _[_<u>Shopify’s guide</u>_](https://help.shopify.com/en/manual/apps/app-types/custom-apps)_ or contact your store admin. If you’re still having trouble, feel free to reach out to us at _[**_<u>help@alphablocks.ai</u>_**](mailto:help@alphablocks.ai)**_._**
+_If you can’t access the _**_Dev Dashboard_**_ section, you may not have the required setup/permissions. Check _[_Shopify’s guide_](https://help.shopify.com/en/manual/apps/app-types/custom-apps)_ or contact your store admin. If you’re still having trouble, feel free to reach out to us at _[**_help@alphablocks.ai_**](mailto:help@alphablocks.ai)**_._**
 
 ### **Step 2: Name Your App**
 
@@ -19,24 +19,25 @@ _If you can’t access the _**_Dev Dashboard_**_ section, you may not have the r
 - Click **Create**
 
 ### **Step 3: Add Admin API Access Scopes**
+
 Under the section **Access** \> **Scopes** copy-paste the following scopes:
 
 ```markdown Access Scopes
-  read_analytics,read_app_proxy,write_app_proxy,read_customer_events,read_custom_pixels,write_custom_pixels,
-  read_customers,read_price_rules,read_discounts,read_discounts_allocator_functions,read_draft_orders,read_files,
-  read_fulfillment_constraint_rules,read_fulfillments,read_inventory,read_legal_policies,read_locales,
-  read_locations,read_markets,read_metaobject_definitions,read_metaobjects,read_online_store_navigation,
-  read_online_store_pages,read_order_edits,read_orders,read_pixels,write_pixels,read_product_feeds,
-  read_product_listings,read_products,read_publications,read_reports,read_script_tags,write_script_tags,read_content,
-  read_translations
+read_analytics,read_app_proxy,write_app_proxy,read_customer_events,read_custom_pixels,write_custom_pixels,
+read_customers,read_price_rules,read_discounts,read_discounts_allocator_functions,read_draft_orders,read_files,
+read_fulfillment_constraint_rules,read_fulfillments,read_inventory,read_legal_policies,read_locales,
+read_locations,read_markets,read_metaobject_definitions,read_metaobjects,read_online_store_navigation,
+read_online_store_pages,read_order_edits,read_orders,read_pixels,write_pixels,read_product_feeds,
+read_product_listings,read_products,read_publications,read_reports,read_script_tags,write_script_tags,read_content,
+read_translations
 ```
+
 - Click **Release**
 
 ### **Step 3: Navigate to Settings Tab**
 
 - Go to the **Settings** tab
 - Under Credentials, make note of **Client ID** and **Secret**. You'll need these in Asa Dashboard.
-
 
 ### **Step 4: Connect Shopify in Asa**
 
@@ -63,7 +64,6 @@ Under the section **Access** \> **Scopes** copy-paste the following scopes:
 
 _Make sure all fields are filled in accurately before clicking _**_Connect_**_ to complete the setup._
 
-
 ### **Step 5: Select Content and Train**
 
 - After connecting, a dialog will open to select products, blogs, pages, or policies
@@ -82,4 +82,4 @@ To verify everything is working, go to **Manage Content** \> **Integrations** an
 - You must have the right permissions to create custom apps in Shopify
 - For secure setup, only the scopes you selected are accessed by Asa — nothing more
 
-If you need help, reach out to us at [**<u>help@alphablocks.ai</u>**](mailto:help@alphablocks.ai) — we’re happy to assist.
+If you need help, reach out to us at [**help@alphablocks.ai**](mailto:help@alphablocks.ai) — we’re happy to assist.

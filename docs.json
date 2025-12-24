@@ -1,17 +1,28 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "aspen",
   "name": "Asa Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0b57d0",
+    "light": "#0b57d0",
+    "dark": "#0b57d0"
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "fonts": {
+    "heading": {
+      "family": "Geist",
+      "weight": 400
+    },
+    "body": {
+      "family": "Geist",
+      "weight": 400
+    }
   },
   "favicon": "/icon.png",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
         "groups": [
           {
             "group": "Getting started",
@@ -31,7 +42,8 @@
               "integrations/notion",
               "integrations/judge-me",
               "integrations/yotpo",
-              "integrations/google-drive"
+              "integrations/google-drive",
+              "integrations/klaviyo"
             ]
           },
           {
@@ -54,9 +66,7 @@
               "legal/refunds"
             ]
           }
-        ]
-      }
-    ],
+        ],
     "global": {
       "anchors": [
         {
@@ -74,7 +84,7 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/light.svg"
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
