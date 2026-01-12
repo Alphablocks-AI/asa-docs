@@ -27,7 +27,6 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
               "get-started/add-manage-knowledge",
               "get-started/customize",
               "get-started/deploy",
