@@ -4,6 +4,54 @@ description: "Integration guide to connect Asa with your shopify store"
 sidebarTitle: "Shopify"
 ---
 
+Use one of the following setups to connect Asa to your Shopify account. The **Shopify App Setup** is the recommended path for most stores, while **Shopify Legacy Setup** is available for older configurations.
+
+<Tabs>
+<Tab title="Shopify App Setup">
+
+Use this path if you want the simplest, most up-to-date way to connect Asa to your Shopify store using the official Asa app from the Shopify App Store.
+
+### **Step 1: Install the Asa app from Shopify App Store**
+
+- In your Shopify admin, go to the **Shopify App Store**.
+- Search for **"Asa"**.
+- Open the Asa app listing and click **Install**.
+- Choose the Shopify store where you want to install Asa (if you manage multiple stores).
+
+### **Step 2: Approve app permissions**
+
+- Shopify will show you a permissions screen describing what the Asa app can access.
+- Review the permissions carefully (products, content, orders, etc.).
+- Click **Install app** to approve and continue.
+
+Once approved, Shopify will automatically redirect you to the Asa Dashboard.
+
+### **Step 3: Sign up or log in to Asa**
+
+- If you already have an Asa account, **log in** with your existing credentials.
+- If you’re new to Asa, **sign up** to create an account.
+- After sign-in, you’ll be taken straight to the Shopify integration flow for the store you just connected.
+
+### **Step 4: Complete the integration form**
+
+- The Shopify integration form will open automatically.
+- You’ll see two fields:
+  - **Shopify Subdomain:** Your store subdomain (for example, `acme` if your admin URL is `https://admin.shopify.com/store/acme/...`).
+  - **Shopify Online Store URL:** Your public storefront URL (for example, `https://acme.com`).
+- Check that both values are correct and double-check for typos before continuing.
+
+### **Step 5: Connect and wait for confirmation**
+
+- When you’re ready, click **Proceed** or **Connect** to start the connection.
+- The integration typically completes within **1–2 minutes**.
+- Once connected, you’ll see a success state in the Asa Dashboard and the app will appear as **Connected** for that store.
+
+After the app is connected, you can move on to selecting which products, pages, and policies you want Asa to learn.
+
+</Tab>
+
+<Tab title="Shopify Legacy Setup">
+
 Follow these steps to connect Asa to your Shopify account using a **custom app** with limited Admin API access. This setup lets Asa learn from your product listings, metafields, blogs, pages, and store policies.
 
 ### **Step 1: Create a Custom App in Shopify**
@@ -23,13 +71,7 @@ Follow these steps to connect Asa to your Shopify account using a **custom app**
 Under the section **Access** \> **Scopes** copy-paste the following scopes:
 
 ```markdown Access Scopes
-read_analytics,read_app_proxy,write_app_proxy,read_customer_events,read_custom_pixels,write_custom_pixels,
-read_customers,read_price_rules,read_discounts,read_discounts_allocator_functions,read_draft_orders,read_files,
-read_fulfillment_constraint_rules,read_fulfillments,read_inventory,read_legal_policies,read_locales,
-read_locations,read_markets,read_metaobject_definitions,read_metaobjects,read_online_store_navigation,
-read_online_store_pages,read_order_edits,read_orders,read_pixels,write_pixels,read_product_feeds,
-read_product_listings,read_products,read_publications,read_reports,read_script_tags,write_script_tags,read_content,
-read_translations
+read_customers, read_discounts, read_fulfillments, read_inventory, read_legal_policies, read_metaobject_definitions, read_metaobjects, read_online_store_pages, read_orders, read_product_listings, read_products, read_publications, read_content, read_app_proxy, write_app_proxy, read_customer_events, read_themes, read_pixels, write_pixels
 ```
 
 - Click **Release**
@@ -62,6 +104,9 @@ read_translations
     Then your subdomain is: `acme`.
 
 **___Make sure all fields are filled in accurately before clicking Connect to complete the setup.___**
+</Tab>
+
+</Tabs>
 
 ### **Step 5: Select Content and Train**
 
@@ -71,7 +116,7 @@ read_translations
 
 Training usually takes a couple of minutes.
 
-To verify everything is working, go to **Manage Content** \> **Integrations** and check the training status of the selected items.
+*To verify everything is working, go to **Manage Content** \> **Integrations** and check the training status of the selected items.*
 
 [Image and Video for select dialog of shopify]
 

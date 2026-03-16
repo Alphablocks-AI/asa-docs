@@ -23,49 +23,48 @@
   },
   "favicon": "/icon.png",
   "navigation": {
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "get-started/add-manage-knowledge",
-              "get-started/customize",
-              "get-started/deploy",
-              "get-started/manage-conversations",
-              "get-started/analytics"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "integrations/shopify",
-              "integrations/notion",
-              "integrations/judge-me",
-              "integrations/yotpo",
-              "integrations/google-drive",
-              "integrations/klaviyo"
-            ]
-          },
-          {
-            "group": "Resources",
-            "pages": [
-              "resources/asa-ai-resolutions",
-              "resources/plan-pricing",
-              "resources/best-practices",
-              "resources/trained-source-count"
-            ]
-          },
-          {
-            "group": "Legal",
-            "pages": [
-              "legal/terms-of-service",
-              "legal/privacy",
-              "legal/cookies",
-              "legal/fair-usage",
-              "legal/asa-limitations",
-              "legal/refunds"
-            ]
-          }
-        ],
+    "groups": [
+      {
+        "group": "Getting started",
+        "pages": [
+          "get-started/add-manage-knowledge",
+          "get-started/customize",
+          "get-started/deploy",
+          "get-started/manage-conversations",
+          "get-started/analytics"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "integrations/shopify",
+          "integrations/notion",
+          "integrations/judge-me",
+          "integrations/yotpo",
+          "integrations/google-drive",
+          "integrations/klaviyo"
+        ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/plan-pricing",
+          "resources/best-practices",
+          "resources/trained-source-count"
+        ]
+      },
+      {
+        "group": "Legal",
+        "pages": [
+          "legal/terms-of-service",
+          "legal/privacy",
+          "legal/cookies",
+          "legal/fair-usage",
+          "legal/asa-limitations",
+          "legal/refunds"
+        ]
+      }
+    ],
     "global": {
       "anchors": [
         {
@@ -100,15 +99,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
