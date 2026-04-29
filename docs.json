@@ -1,27 +1,26 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
+  "theme": "willow",
   "name": "Asa Docs",
   "colors": {
-    "primary": "#0b57d0",
-    "light": "#0b57d0",
-    "dark": "#0b57d0"
+    "primary": "#0e0e0e",
+    "light": "#0e0e0e",
+    "dark": "#0e0e0e"
+  },
+  "fonts": {
+    "body": {
+      "family": "Inter",
+      "weight": 400
+    }
   },
   "appearance": {
     "default": "light",
     "strict": true
   },
-  "fonts": {
-    "heading": {
-      "family": "Geist",
-      "weight": 400
-    },
-    "body": {
-      "family": "Geist",
-      "weight": 400
-    }
-  },
   "favicon": "/icon.png",
+  "icons": {
+    "library": "fontawesome"
+  },
   "navigation": {
     "groups": [
       {
@@ -96,18 +95,6 @@
       "label": "Dashboard",
       "href": "https://asa.alphablocks.ai"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
