@@ -1,84 +1,208 @@
 ---
 title: "Shopify"
-description: "Integration guide to connect Asa with your shopify store"
+description: "Connect Shopify so Asa can learn from your products, pages, blogs, and policies — the foundation for accurate storefront answers."
 sidebarTitle: "Shopify"
 ---
 
-Follow these steps to connect Asa to your Shopify account using a **custom app** with limited Admin API access. This setup lets Asa learn from your product listings, metafields, blogs, pages, and store policies.
+Your Shopify catalog is Asa's most important content source. Connect your store, then choose exactly what Asa should learn from.
 
-### **Step 1: Create a Custom App in Shopify**
+**Today, use the Custom app path.** The official Asa Shopify app is in App Store review and is not generally available yet. Once it is approved, you will be able to install from the Shopify App Store instead of creating a custom app.
 
-- In your Shopify dashboard, go to **Settings** \> **Apps and Sales Channels** \> **Develop Apps** \> **Build apps in Dev Dashboard**.
-- Click **Create App** from the top right.
+<Tabs>
 
-[[****_______If you can’t access the Dev Dashboard section, you may not have the required setup/permissions. Check Shopify’s guide or contact your store admin. If you’re still having trouble, feel free to reach out to us at help@alphablocks.ai\*\*._______****](mailto:help@alphablocks.ai)](https://help.shopify.com/en/manual/apps/app-types/custom-apps)\*\*
+<Tab title="Custom app">
 
-### **Step 2: Name Your App**
+Use this path now — connect Asa with a **Shopify custom app** and Admin API credentials from the [Shopify Dev Dashboard](https://shopify.dev/docs/apps/build/dev-dashboard).
 
-- Name your app **"Asa Custom App"**
-- Click **Create**
+<Steps titleSize="h4">
 
-### **Step 3: Add Admin API Access Scopes**
+<Step icon="wrench" title="Create a custom app in Shopify">
 
-Under the section **Access** \> **Scopes** copy-paste the following scopes:
+In your **Shopify admin**, go to **Settings > Apps and sales channels**, then **Develop apps** and open **Build apps in Dev Dashboard**.
 
-```markdown Access Scopes
-read_analytics,read_app_proxy,write_app_proxy,read_customer_events,read_custom_pixels,write_custom_pixels,
-read_customers,read_price_rules,read_discounts,read_discounts_allocator_functions,read_draft_orders,read_files,
-read_fulfillment_constraint_rules,read_fulfillments,read_inventory,read_legal_policies,read_locales,
-read_locations,read_markets,read_metaobject_definitions,read_metaobjects,read_online_store_navigation,
-read_online_store_pages,read_order_edits,read_orders,read_pixels,write_pixels,read_product_feeds,
-read_product_listings,read_products,read_publications,read_reports,read_script_tags,write_script_tags,read_content,
-read_translations
+Click **Create app** and name it **Asa Custom App**, then click **Create**.
+
+<Note>
+If you cannot access the Dev Dashboard, you may lack the required permissions. Ask your store admin. For help from Asa, email [help@alphablocks.ai](mailto:help@alphablocks.ai).
+</Note>
+
+</Step>
+
+<Step icon="key" title="Add Admin API scopes and install">
+
+In your custom app, open **Access > Scopes** and paste these scopes:
+
+```
+read_app_proxy,read_content,read_customer_events,read_customers,read_discounts,read_fulfillments,read_inventory,read_legal_policies,read_metaobject_definitions,read_metaobjects,read_online_store_pages,read_orders,read_pixels,read_product_listings,read_products,read_publications,read_themes,write_app_proxy,write_pixels
 ```
 
-- Click **Release**
-- **Click "Install" and select store to install it on**
+Click **Release**, then **Install** and select the store to install on.
 
-### **Step 3: Navigate to Settings Tab**
+</Step>
 
-- Go to the **Settings** tab
-- Under Credentials, make note of **Client ID** and **Secret**. You'll need these in Asa Dashboard.
+<Step icon="clipboard" title="Copy Client ID and Secret">
 
-### **Step 4: Connect Shopify in Asa**
+Open the **Settings** tab in your custom app.
 
-- In your **Asa dashboard**, go to **Add Content**, open the **Integrations** tab, and click **Connect** under **Shopify**.
-- You’ll be asked to enter the following details:
-  - **Admin API Access Client ID**:
-  - Paste the lient ID you noted from previous step.
-  - **Admin API Access Secret**:
-  - Paste the Secret you noted from previous step.
-  - **Storefront Public URL**:
-  - This is your live store URL — for example:
+Under **Credentials**, copy the **Client ID** and **Secret** — you need both in Asa.
 
-    `https://example.com` or `https://acme.com`.
-  - **Shopify Subdomain**:
-  - In Shopify, go to **Settings \> Domains** and find the domain that ends in `.myshopify.com`.
+</Step>
 
-    If your admin URL is:
+<Step icon="plug" title="Connect in Asa">
 
-    `https://admin.shopify.com/store/acme/settings/domains`
+Navigate to **Add Content** in the sidebar, open the **Apps** tab, and click **Connect** on the **Shopify (Custom App)** card.
 
-    Then your subdomain is: `acme`.
+<Frame>
+  <img src="/images/shopify-connect-dialog.png" alt="Connect to Shopify Legacy dialog with Client ID, Client Secret, Storefront Public URL, and Shopify Subdomain" />
+</Frame>
 
-**___Make sure all fields are filled in accurately before clicking Connect to complete the setup.___**
+Enter your credentials:
 
-### **Step 5: Select Content and Train**
+| Field | What to paste |
+|---|---|
+| **Client ID** | Client ID from your custom app |
+| **Client Secret** | Secret from your custom app |
+| **Storefront Public URL** | Your live store URL (e.g. `https://acme.com`) |
+| **Shopify Subdomain** | Subdomain from **Settings > Domains** — the part before `.myshopify.com` |
 
-- After connecting, a dialog will open to select products, blogs, pages, or policies
-- If it doesn’t appear, click the  icon next to **Connected** under Shopify
-- Choose the content you want Asa to learn from and click **Add Content**
+Example: if your admin URL is `https://admin.shopify.com/store/acme/settings/domains`, your subdomain is `acme`.
 
-Training usually takes a couple of minutes.
+Click **Connect**. When setup succeeds, the card shows **Connected**.
 
-To verify everything is working, go to **Manage Content** \> **Integrations** and check the training status of the selected items.
+<Note>
+Connecting Shopify does not train Asa on your catalog yet. You choose what to train in the next section.
+</Note>
 
-[Image and Video for select dialog of shopify]
+</Step>
 
-### **Notes**
+</Steps>
 
-- Use the <Icon icon="list-ul" /> icon next to Shopify to add more content or retrain updated items anytime
-- You must have the right permissions to create custom apps in Shopify
-- For secure setup, only the scopes you selected are accessed by Asa — nothing more
+</Tab>
 
-If you need help, reach out to us at [**help@alphablocks.ai**](mailto:help@alphablocks.ai) — we’re happy to assist.
+<Tab title="Shopify app">
+
+Use this path after the Asa app is live on the [Shopify App Store](https://apps.shopify.com/). It is the simpler install flow once listing approval is complete.
+
+<Warning>
+The Asa Shopify app is currently in App Store review. Until it is approved, follow the **Custom app** tab above.
+</Warning>
+
+<Steps titleSize="h4">
+
+<Step icon="store" title="Install Asa from the Shopify App Store">
+
+In your **Shopify admin**, open the **Shopify App Store**, search for **Asa**, and open the Asa listing.
+
+Click **Install**, then choose the store you want to connect if you manage more than one.
+
+</Step>
+
+<Step icon="shield-check" title="Approve app permissions">
+
+Shopify shows a permissions screen for what the Asa app can access — products, content, orders, metafields, and related store data.
+
+Review the permissions, then click **Install app** to approve.
+
+Shopify redirects you to the Asa dashboard when installation finishes.
+
+</Step>
+
+<Step icon="user" title="Sign in to Asa">
+
+On the Asa sign-in screen:
+
+- **Log in** if you already have an account.
+- **Sign up** if you are new to Asa.
+
+After sign-in, you land on **Add Content** and the Shopify connection flow opens for the store you just installed.
+
+</Step>
+
+<Step icon="plug" title="Connect your store in Asa">
+
+After install, Asa opens the Shopify connection on **Add Content**. You may see one of two dialogs:
+
+**A — Confirmation dialog (most common after App Store install)**  
+A short message confirms your store name. Click **Integrate** to finish the connection.
+
+**B — Full connect dialog**  
+If you connect manually from the Shopify card, confirm both fields:
+
+| Field | What to enter |
+|---|---|
+| **Shopify subdomain** | The part before `.myshopify.com` (e.g. `acme` from `acme.myshopify.com`) |
+| **Website link** | Your public storefront URL (e.g. `https://acme.com`) |
+
+<Frame>
+  <img src="/images/shopify-app-connect-dialog.png" alt="Connect to Shopify dialog with Shopify subdomain and Website link fields" />
+</Frame>
+
+Click **Connect** or **Integrate**, depending on which dialog you see.
+
+- If the Asa app is not installed on that store yet, Asa redirects you to complete Shopify authorization first.
+- When connection succeeds, the Shopify card shows **Connected**.
+
+<Note>
+Connecting Shopify does not train Asa on your catalog yet. You choose what to train in the next section.
+</Note>
+
+</Step>
+
+</Steps>
+
+</Tab>
+
+</Tabs>
+
+## Select content and train
+
+After Shopify connects — on either path — the content selection dialog opens automatically. If it does not, open the **Connected** menu on the Shopify card and choose **Manage integration**.
+
+<Steps titleSize="h4">
+
+<Step icon="list-check" title="Choose catalog content">
+
+In **Allow Asa to access these data sources**, select what Asa should learn from — for example **Products**, **Blogs**, **Pages**, and **Policies**.
+
+<Frame>
+  <img src="/images/shopify-train-content-dialog.png" alt="Shopify content selection dialog with Products, Blogs, Pages, and Policies categories" />
+</Frame>
+
+</Step>
+
+<Step icon="tags" title="Select metafields (if applicable)">
+
+If you selected products, click **Next** to open **Select Metafields** and choose which product metafields Asa should use.
+
+Click **Proceed** to start training. If you did not select products, click **Proceed** from the content screen instead.
+
+Training usually takes a few minutes depending on how much you selected.
+
+<Check>
+Go to **Manage Content** and confirm your Shopify sources show a **Trained** status.
+</Check>
+
+</Step>
+
+</Steps>
+
+## Keep content up to date
+
+| Action | How |
+|---|---|
+| Add or change catalog content | On the Shopify card, open **Connected** → **Manage integration** to update your selection. |
+| Retrain after Shopify edits | Update products or pages in Shopify, then retrain from **Manage Content**. |
+| Custom app permissions | Custom app setup must include all Admin API scopes from the **Add Admin API scopes** step — Asa only accesses what you grant. |
+
+<Tip>
+To put Asa on your storefront after training, go to **Configuration > Deploy** and follow the Shopify channel instructions.
+</Tip>
+
+## Notes
+
+- Until the Asa Shopify app is approved, use the **Custom app** path and the **Shopify (Custom App)** card in **Add Content**.
+- After App Store approval, the **Shopify app** tab describes the install-from-store flow.
+- Double-check credentials and store URLs — typos are the most common connection failure.
+- Only the scopes or permissions you approve are used by Asa.
+
+If you need help, reach out at [help@alphablocks.ai](mailto:help@alphablocks.ai).

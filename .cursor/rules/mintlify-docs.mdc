@@ -1,0 +1,180 @@
+---
+description: Mintlify docs discovery, MDX components, technical writing, and GEO for this documentation site
+alwaysApply: true
+---
+
+# Mintlify documentation (this repo)
+
+## Discover upstream Mintlify docs first
+
+Before changing navigation, components, or MDX patterns you are unsure about, discover what Mintlify documents:
+
+1. **Documentation index**: fetch and skim [https://www.mintlify.com/docs/llms.txt](https://www.mintlify.com/docs/llms.txt) to see available pages, then open only the pages you need.
+2. **Project navigation**: follow [docs.json](https://mintlify.com/docs.json) when editing `docs.json` and site structure.
+3. **Mintlify MCP**: if the Mintlify MCP server is connected in Cursor, use it to search current Mintlify docs instead of guessing APIs or props.
+
+## Submitting feedback (Mintlify.com docs only)
+
+If official Mintlify documentation is wrong, outdated, or confusing **and you have something specific and actionable**, you may report it:
+
+`POST https://www.mintlify.com/docs/feedback`
+
+```json
+{
+  "path": "/guides/cursor",
+  "feedback": "Description of the issue"
+}
+```
+
+Use the real doc path you were reading. Do **not** submit vague or speculative feedback.
+
+---
+
+# Technical writing and MDX
+
+You are a documentation assistant for this Mintlify site: use Mintlify MDX components, clear technical writing, and practices that work for humans and AI answer engines (GEO).
+
+## Core writing principles
+
+- **Language**: Clear, direct, second person ("you") for procedures; active voice; present for current behavior, future for outcomes. Define jargon once. Consistent terminology (one name per concept).
+- **Organization**: Lead with the answer (inverted pyramid). Prerequisites before steps. Numbered steps for sequences. Descriptive, keyword-rich headings. Verification where helpful.
+- **User-centered**: Goal-focused; anticipate questions; troubleshooting at likely failure points; scannable layout (headings, lists, space).
+
+## Every page
+
+Start with YAML frontmatter:
+
+```yaml
+---
+title: "Clear, specific, keyword-rich title"
+description: "Concise description of what this page helps the user do"
+---
+```
+
+**Headings**: Use H2 then H3 without skipping levels. Prefer question-style H2/H3 when they match how users ask ("How do I …?").
+
+**Code**: Labeled fences with language. No real secrets or API keys. Realistic, runnable examples when possible.
+
+**Images**: Meaningful `alt` text. Prefer `<Frame>` around images (see below).
+
+**Accessibility**: Descriptive link text (not "click here"). Meaningful alt text; good contrast in any custom examples.
+
+## Mintlify components (selection)
+
+| Need | Use |
+|------|-----|
+| Extra context | `<Note>`, `<Info>` |
+| Best practices | `<Tip>` |
+| Risk / breaking / destructive | `<Warning>` |
+| Success check | `<Check>` |
+| Same idea, multiple languages | `<CodeGroup>` |
+| Step-by-step | `<Steps>` + `<Step title="...">` |
+| Platform alternatives | `<Tabs>` / `<Tab>` |
+| Collapsible detail | `<AccordionGroup>` / `<Accordion>` |
+| API params | `<ParamField path|body|query|header="..." type="..." required?>` |
+| API responses | `<ResponseField>`; nesting `<Expandable>` |
+| Request/response pairs | `<RequestExample>` / `<ResponseExample>` |
+| Highlight links | `<Card>`, `<CardGroup cols={2}>` |
+| Images | `<Frame>` optional `caption` |
+| Changelog style | `<Update label="..." description="...">` |
+
+### Callouts
+
+```mdx
+<Note>Supplementary information.</Note>
+<Tip>Best practice or shortcut.</Tip>
+<Warning>Breaking changes or destructive actions.</Warning>
+<Info>Neutral background.</Info>
+<Check>Success or completion.</Check>
+```
+
+### Steps
+
+```mdx
+<Steps>
+<Step title="Do the first thing">
+  Instructions here.
+  <Check>How to verify.</Check>
+</Step>
+</Steps>
+```
+
+### Code group
+
+```mdx
+<CodeGroup>
+```javascript Node.js
+// example
+```
+```python Python
+# example
+```
+</CodeGroup>
+```
+
+### API examples
+
+```mdx
+<RequestExample>
+```bash cURL
+curl -X GET 'https://api.example.com/v1/resource'
+```
+</RequestExample>
+<ResponseExample>
+```json 200
+{ "ok": true }
+```
+</ResponseExample>
+```
+
+### Images
+
+```mdx
+<Frame>
+<img src="/images/example.png" alt="Specific description of what the image shows" />
+</Frame>
+```
+
+### Cards
+
+```mdx
+<Card title="Title" icon="rocket" href="/path">
+Short description.
+</Card>
+```
+
+## Component selection (quick rules)
+
+- **Steps**: procedures and sequences.
+- **Tabs**: OS or mutually exclusive options.
+- **CodeGroup**: same operation in multiple languages.
+- **Accordions**: progressive disclosure, long troubleshooting.
+- **RequestExample/ResponseExample**: HTTP API docs.
+- **ParamField** / **ResponseField**: parameters and response shapes; **Expandable** for nested objects.
+
+## GEO (Generative Engine Optimization)
+
+AI tools cite docs that are **direct**, **specific**, **structured**, and **trustworthy**.
+
+- **Lead with the answer** in each section; avoid long preambles before the procedure or fact.
+- **Headings match questions** users ask when possible.
+- **Be specific**: numbers, limits, status codes, boundaries—avoid vague marketing language.
+- **Stable terminology** across the page so excerpts stay correct.
+- **Code blocks**: always specify language.
+- **Alt text**: describe informational content of diagrams, not only "diagram".
+- **Nouns over vague pronouns** ("the API key" not "it") so excerpts stay clear.
+
+### This site
+
+- Descriptive `title` and `description` in frontmatter (what the page helps users do).
+- Optional: in `docs.json`, `"seo": { "indexing": "all" }` includes hidden pages in search/context when that matches product policy.
+- After deploy, your site exposes `/llms.txt` automatically; do not break `robots.txt` in ways that block common AI crawlers if you want citations.
+
+---
+
+## Quality checks before suggesting or publishing
+
+- Examples copy-paste ready; expected outputs where useful.
+- API docs: parameters (including optional), success and error examples, auth pattern, notable status codes.
+- **docs.json** stays valid and matches [schema](https://mintlify.com/docs.json).
+- Prefer verifying behavior against product truth over inventing endpoints or UI labels.

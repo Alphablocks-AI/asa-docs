@@ -1,18 +1,98 @@
 ---
-title: "Best Practices"
-description: "Guide to get most out of your ASA AI assistant"
+title: "Best practices for training Asa"
+description: "Practical ways to keep Asa accurate: what to train, how to maintain content, and how to learn from shopper conversations."
 ---
 
-# **Best Practices**
+Asa answers from what you train in the [dashboard](https://asa.alphablocks.ai). Strong content beats volume — clear, current, non-conflicting sources produce the most trustworthy storefront answers.
 
-[Asa AI Agent](https://asa.alphablocks.ai/) can consume all the support content you added via our [dashboard](https://tryasa.com/) to immediately offer your customers accurate and trustworthy answers. Here’s how you ensure your content is optimized for AI support, both around creating new support content, and optimizing existing content.
+<Steps titleSize="h4">
 
-- **Identify Trends:** Analyze recent customer interactions—via Asa or other channels—to spot recurring topics and create targeted content.
-- **Leverage Recurring Macros:** Instead of repeatedly handling common issues, compile detailed responses into internal docs or blog posts. Training Asa with this content helps automate responses, freeing your team for higher-priority tasks.
-- **Prioritize Quality Over Quantity:** More content isn’t always better. Focus on clear, concise, and relevant information to maximize Asa’s effectiveness in automating frontline support.
-- **Utilize the Content Gaps Feature:** This tool identifies missing information critical to addressing recurring customer queries, helping you refine your content.
-- **Remove Outdated Content:** Delete irrelevant trained sources to ensure customers receive only accurate, up-to-date answers.
-- **Avoid Data Duplication & Conflicts:** Ensure consistency in Asa’s training data, as conflicting information may lead to incorrect responses.
-- **Leverage Integrations over document uploads:** Use our Shopify and CMS integrations to automatically update Asa with product changes via webhook, keeping information current without manual effort.
+<Step icon="seedling" title="Start with what shoppers ask most">
 
-Our team is continuously enhancing your dashboard with unified intelligence features. These will analyze past and present conversations, detect recurring themes, and suggest or even generate content for quick approval—allowing Asa to evolve into a smarter, more autonomous system. To move this up the priority, write to us at [<u>help@alphablocks.ai</u>](mailto:help@alphablocks.ai)
+Train the sources that resolve real questions first.
+
+1. Go to **Add Content** in the sidebar.
+2. Connect **Shopify** if you sell there — products, policies, and key pages cover most pre-purchase and support questions.
+3. Add policies, sizing guides, or FAQs via **Files**, **Websites**, or **Notion** / **Google Drive** if they live outside Shopify.
+
+<Check>
+In **Manage Content**, every item you need at launch shows **Trained**. Use **View Content** on a row to confirm Asa extracted what you expect.
+</Check>
+
+<CardGroup cols={2}>
+  <Card title="Connect Shopify" href="/integrations/shopify" icon="shopify">
+    Auto-sync products, pages, policies, and blogs.
+  </Card>
+  <Card title="How sources are counted" href="/resources/trained-source-count" icon="calculator">
+    Plan limits and what counts as one source.
+  </Card>
+</CardGroup>
+
+</Step>
+
+<Step icon="arrows-rotate" title="Keep content current">
+
+| Practice | Why it helps |
+|---|---|
+| **Use integrations over one-off uploads** | Shopify, Notion, and Google Drive stay closer to your live catalog and docs. Shopify updates retrain the same source — they do not inflate your count with duplicates. |
+| **Remove outdated trained sources** | Delete retired products, old policies, or broken URLs from **Manage Content** so Asa cannot cite stale answers. |
+| **Retrain after major edits** | Changed a Notion page or re-uploaded a file? Retrain from **Manage Content** so the latest version is what shoppers get. |
+
+<Warning>
+Conflicting facts across sources (two different return windows, mismatched shipping copy) can confuse answers. Pick one canonical source per topic and remove or fix duplicates.
+</Warning>
+
+</Step>
+
+<Step icon="comments" title="Learn from conversations">
+
+Use **Activity > Conversations** to read what shoppers actually ask and where Asa escalated to your team (**redirected** conversations).
+
+| Signal | What to do |
+|---|---|
+| Same question many times | Add or improve a trained source (product copy, policy page, Notion FAQ). |
+| Wrong or thin answer | Open **View Content** on the relevant source; fix the source material, then retrain. |
+| Team handles the same macro repeatedly | Turn the answer into a **Snippet** under **Add Content > Snippet** — snippets do not use plan knowledge source quota. |
+
+On **Starter** and **Growth**, **Activity > Analytics** helps you spot volume and themes over time as traffic grows.
+
+</Step>
+
+<Step icon="scale-balanced" title="Prioritize quality over quantity">
+
+More files do not always mean better support.
+
+- Train pages shoppers reference — shipping, returns, sizing, ingredients, compatibility — not internal drafts.
+- Write in plain language; Asa passes through structure and facts from your sources.
+- Stay within your [knowledge source limit](/resources/trained-source-count). If you hit the cap, remove low-value trained rows or upgrade on [Plans and pricing](/resources/plan-pricing).
+
+<Tip>
+**Snippets** are ideal for short, stable answers (warranty one-liner, promo rules). Publish trained snippets as widget FAQs from **Manage Content** when you want them on the greeting screen.
+</Tip>
+
+</Step>
+
+<Step icon="wand-magic-sparkles" title="Tune behavior after content is solid">
+
+Once training looks good, align how Asa speaks and when it hands off:
+
+- **Configuration > Appearance** — brand look and widget placement ([Make Asa your own](/get-started/make-asa-your-own)).
+- **Configuration > Responses** — tone, length, human support contact, and **Guidance** instructions.
+- **Configuration > Responses > Handover** — when to route to Gorgias or your team ([Gorgias integration](/integrations/gorgias)).
+
+Content quality and behavior settings work together; fix training gaps before chasing tone tweaks alone.
+
+</Step>
+
+</Steps>
+
+## Quick reference
+
+| Do | Avoid |
+|---|---|
+| Connect Shopify and train high-intent catalog + policies | Training every product when only a subset is in stock or on sale |
+| Delete unused sources in **Manage Content** | Leaving conflicting return or shipping copy in multiple files |
+| Use **Snippet** for repeatable short answers | Uploading the same FAQ as PDF, URL, and Notion page |
+| Review **Conversations** weekly after launch | Ignoring redirected threads that reveal missing policies |
+
+Need help prioritizing content for your catalog? Contact [help@alphablocks.ai](mailto:help@alphablocks.ai).

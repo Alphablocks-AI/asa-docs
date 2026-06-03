@@ -1,0 +1,22 @@
+.card {
+    border-radius: 6px;
+}
+
+[data-component-part="card-content-container"] {
+    padding: 12px 16px;
+}
+
+[data-component-part="card-title"] {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+[data-component-part="card-content"] {
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.frame {
+    border-radius: 6px;
+    padding: 0px;
+}

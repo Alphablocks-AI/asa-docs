@@ -1,85 +1,68 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
+  "theme": "willow",
   "name": "Asa Docs",
   "colors": {
-    "primary": "#0b57d0",
-    "light": "#0b57d0",
-    "dark": "#0b57d0"
+    "primary": "#0e0e0e",
+    "light": "#0e0e0e",
+    "dark": "#0e0e0e"
+  },
+  "fonts": {
+    "body": {
+      "family": "Inter",
+      "weight": 400
+    }
   },
   "appearance": {
     "default": "light",
     "strict": true
   },
-  "fonts": {
-    "heading": {
-      "family": "Geist",
-      "weight": 400
-    },
-    "body": {
-      "family": "Geist",
-      "weight": 400
-    }
-  },
   "favicon": "/icon.png",
+  "icons": {
+    "library": "fontawesome"
+  },
   "navigation": {
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "get-started/add-manage-knowledge",
-              "get-started/customize",
-              "get-started/deploy",
-              "get-started/manage-conversations",
-              "get-started/analytics"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "integrations/shopify",
-              "integrations/notion",
-              "integrations/judge-me",
-              "integrations/yotpo",
-              "integrations/google-drive",
-              "integrations/klaviyo"
-            ]
-          },
-          {
-            "group": "Resources",
-            "pages": [
-              "resources/asa-ai-resolutions",
-              "resources/plan-pricing",
-              "resources/best-practices",
-              "resources/trained-source-count"
-            ]
-          },
-          {
-            "group": "Legal",
-            "pages": [
-              "legal/terms-of-service",
-              "legal/privacy",
-              "legal/cookies",
-              "legal/fair-usage",
-              "legal/asa-limitations",
-              "legal/refunds"
-            ]
-          }
-        ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "href": "https://asa.so",
-          "icon": "globe"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://asa.so/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "groups": [
+      {
+        "group": "Getting started",
+        "pages": [
+          "get-started/quickstart",
+          "get-started/make-asa-your-own",
+          "get-started/see-asa-working"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "integrations/shopify",
+          "integrations/notion",
+          "integrations/judge-me",
+          "integrations/yotpo",
+          "integrations/google-drive",
+          "integrations/klaviyo",
+          "integrations/gorgias"
+        ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/plan-pricing",
+          "resources/best-practices",
+          "resources/trained-source-count"
+        ]
+      },
+      {
+        "group": "Legal",
+        "pages": [
+          "legal/terms-of-service",
+          "legal/privacy",
+          "legal/cookies",
+          "legal/fair-usage",
+          "legal/asa-limitations",
+          "legal/refunds"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -88,33 +71,24 @@
   "navbar": {
     "links": [
       {
+        "label": "Website",
+        "href": "https://asa.so"
+      },
+      {
+        "label": "Dashboard",
+        "href": "https://asa.alphablocks.ai"
+      },
+      {
         "label": "Support",
         "href": "mailto:hello@alphablocks.ai"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://asa.alphablocks.ai"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    ]
   },
   "footer": {
     "socials": {
       "x": "https://twitter.com/AlphablocksAI",
       "linkedin": "https://www.linkedin.com/company/alphablocks",
-      "instagram": "https://www.instagram.com/alphablocksai/"
+      "instagram": "https://www.instagram.com/asadotso/"
     }
   }
 }
