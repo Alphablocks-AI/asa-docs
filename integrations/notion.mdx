@@ -1,34 +1,52 @@
 ---
-title: "Notion Integration Guide (2 Steps ~ 1 minute)"
-description: "Integration Guide to connect notion with ASA"
+title: "Notion"
+description: "Train Asa on selected Notion pages and databases so answers stay grounded in your internal knowledge."
 sidebarTitle: "Notion"
 ---
 
-Follow these steps to connect Asa to your Notion account using their recommended OAuth approach. This integration enables your Asa AI agent to access and utilize information stored in your Notion pages and databases.
+SOPs, FAQs, and product notes often live in Notion before they reach your storefront. This guide connects Notion to Asa and trains only the pages you choose.
 
-### **Step 1: Connect Your Notion Account**
+<Steps titleSize="h4">
 
-- In your Asa dashboard, go to **Add Content**, open the **Integrations** tab, and click **Connect** under **Notion**.
-- If you're not logged into Notion, you’ll be prompted to sign in via the OAuth dialog.
-- Once logged in, click **Select Pages** to grant Asa access to specific pages — now or later.
+<Step icon="plug" title="Connect your Notion account">
 
-_Note: Granting access doesn’t automatically train Asa on your content. You’ll choose the content to train in Step 2._
+Navigate to **Add Content** in the sidebar, open the **Apps** tab, and click **Connect** on the **Notion** card.
 
-[Image for connect dialog notion]
+<Frame>
+  <img src="/images/add-content.png" alt="Add Content Apps tab showing integration cards including Notion" />
+</Frame>
 
-### **Step 2: Choose Pages and Train**
+A Notion sign-in window opens. Sign in with the workspace account that owns the pages you want to train, then approve Asa’s access request.
 
-- Once connected, a dialog will open where you can select the Notion pages you want Asa to learn from.
-- Choose the pages and click **Train** — this typically takes 1–2 minutes depending on content size.
+<Note>
+Authorizing Notion does not train Asa on your content yet. You choose which pages to train in the next step.
+</Note>
 
-To confirm it worked, go to **Manage Content** \> **Integrations**. You’ll see the selected Notion pages listed along with their training status.
+</Step>
 
-[Images for pages training dialog]
+<Step icon="file-lines" title="Choose pages and train">
 
-### **Notes**
+After OAuth completes, the **Allow Asa to access these Notion pages** dialog opens automatically.
 
-- Click the <Icon icon="list-ul" /> icon next to **Connected** under Notion to add more pages or retrain updated ones.
-- If you're using a paid Notion workspace, make sure you have admin access to allow the integration.
-- After updating a Notion page, retrain it using the <Icon icon="list-ul" /> icon to keep Asa up to date.
+<Frame>
+  <img src="/images/notion-pages-dialog.png" alt="Notion page selection dialog with checkboxes and Proceed button" />
+</Frame>
 
-If you’re still having trouble, feel free to reach out to us at [**<u>help@alphablocks.ai</u>**](mailto:help@alphablocks.ai).
+Select the pages you want Asa to learn from, then click **Proceed**. Training usually takes 1–2 minutes depending on how much content you selected.
+
+<Check>
+Go to **Manage Content** and confirm your Notion sources appear with a **Trained** status.
+</Check>
+
+</Step>
+
+</Steps>
+
+## Keep content up to date
+
+| Action | How |
+|---|---|
+| Add more pages | On the Notion card, open the **Connected** menu and choose **Manage integration** to open the page picker again. |
+| Retrain after edits | Update the page in Notion, then retrain from **Manage Content** so Asa uses the latest version. |
+
+If you run into trouble, reach out at [help@alphablocks.ai](mailto:help@alphablocks.ai).

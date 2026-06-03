@@ -1,46 +1,74 @@
 ---
-title: "JudgeMe Integration Guide (3 Steps ~ 1 minute)"
-description: "Integration Guide for judge-me review connection with ASA"
-sidebarTitle: "JudgeMe"
+title: "Judge.me"
+description: "Connect Judge.me so Asa can surface real product reviews when shoppers ask about your products."
+sidebarTitle: "Judge.me"
 ---
 
-Follow these steps to connect Asa to your [Judge.Me](http://judge.me/) account using their official API. This allows Asa to read your product reviews and support features like curated, dynamic pros and cons — giving users honest feedback based on real reviews.
+Shoppers trust answers backed by real reviews. Connect Judge.me once and Asa can use your review data alongside your Shopify catalog — about three minutes end to end.
 
-### **Step 1: Open Judge.Me in Shopify**
+<Steps titleSize="h4">
 
-- In your Shopify dashboard, go to **Settings \> Apps and Sales Channels**.
-- Under **Installed Apps**, find **Judge.Me Reviews**.
-- Click it, then select **Open App** in the top-right corner.
+<Step icon="store" title="Open Judge.me in Shopify">
 
-[Image of judge me in shopify app settings]
+In your **Shopify admin**, go to **Settings > Apps and sales channels**.
 
-### **Step 2: Get Your API Token and Subdomain**
+Under **Installed apps**, find **Judge.me Reviews**, open it, then click **Open app** in the top right.
 
-- In the **Judge.Me** sidebar, go to **General Settings** \> **Integrations** tab.
-- Click **View API Token** in the top-right corner.
-- Copy the following values:
-  - **Private API Token**
-  - **Shopify Subdomain** — this is the part before `.myshopify.com`
+<Frame>
+  <img src="/images/judgeme-shopify-apps.png" alt="Shopify Settings showing Judge.me Reviews in installed apps" />
+</Frame>
 
-Example URL to help you locate your subdomain: `https://admin.shopify.com/store/[your-shopify-subdomain]/apps/judgeme/shop/general_settings/integrations`
+</Step>
 
-[Image of judge me in shopify app settings]
+<Step icon="key" title="Copy your API token and subdomain">
 
-### **Step 3: Connect Judge.Me in Asa**
+In the **Judge.me** sidebar, go to **General Settings > Integrations**.
 
-- In your **Asa dashboard**, go to **Add Content**, open the **Integrations** tab, and click **Connect** under **Judge.me Product Reviews**.
-- Enter the required fields:
-  - **Shopify Subdomain**: Paste the subdomain you copied earlier
-  - **Private API Token**: Paste the token from Judge.Me
-- Click **Connect** to complete setup.
+Click **View API Token** and copy:
 
-Once connected, the status will display as **Connected**.
+| Field | Where to find it |
+|---|---|
+| **Private API Access Token** | Shown in the API token dialog |
+| **Shopify Subdomain** | The part before `.myshopify.com` in your store URL |
 
-[Image/video of judge me connect dialog]
+Example integrations URL:
 
-### **Notes**
+`https://admin.shopify.com/store/[your-shopify-subdomain]/apps/judgeme/shop/general_settings/integrations`
 
-- Be sure to double-check your **Shopify subdomain** — it should exactly match the one used in your Shopify URL.
-- The **API token** provides secure, limited access to review data only — safe to use with Asa.
+<Frame>
+  <img src="/images/judgeme-api-token.png" alt="Judge.me Integrations tab showing Private API Access Token and subdomain" />
+</Frame>
 
-If you run into any issues, contact us at [**help@alphablocks.ai**](mailto:help@alphablocks.ai) — we’re here to help.
+</Step>
+
+<Step icon="plug" title="Connect Judge.me in Asa">
+
+Navigate to **Add Content** in the sidebar, open the **Apps** tab, and click **Connect** on the **Judge.me** card.
+
+<Frame>
+  <img src="/images/judgeme-connect-dialog.png" alt="Asa Connect to Judge.Me dialog with Shopify Subdomain and Private API Access Token fields" />
+</Frame>
+
+Enter the values from Judge.me:
+
+| Field | What to paste |
+|---|---|
+| **Shopify Subdomain** | Your store subdomain (e.g. `acme` from `acme.myshopify.com`) |
+| **Private API Access Token** | The token from Judge.me |
+
+Click **Connect**. When setup succeeds, the card shows **Connected**.
+
+<Note>
+Only one reviews app can be connected at a time. If you already use Klaviyo Reviews or Yotpo, disconnect that integration before connecting Judge.me.
+</Note>
+
+</Step>
+
+</Steps>
+
+## Notes
+
+- Your **Shopify Subdomain** must match the subdomain in your Shopify admin URL exactly.
+- The API token gives Asa read access to review data only — not full store admin access.
+
+If you need help, reach out at [help@alphablocks.ai](mailto:help@alphablocks.ai).

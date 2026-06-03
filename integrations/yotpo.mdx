@@ -1,47 +1,74 @@
 ---
-title: "Yotpo Integration Guide"
-description: "Integration Guide to connect yotpo review app with ASA"
+title: "Yotpo"
+description: "Connect Yotpo so Asa can surface real product reviews when shoppers ask about your products."
 sidebarTitle: "Yotpo"
 ---
 
-Follow these steps to connect Asa to your **Yotpo Reviews** account using their official API.\
-This allows Asa to read your product reviews and support features like dynamic pros and cons — giving users authentic insights based on real customer feedback.
+Shoppers trust answers backed by real reviews. Connect Yotpo once and Asa can use your review data alongside your Shopify catalog — about three minutes end to end.
 
-### Step 1: Open Yotpo in Shopify
+<Steps titleSize="h4">
 
-- In your **Shopify dashboard**, go to **Settings \> Apps and Sales Channels**.
-- Under **Installed Apps**, find **Yotpo: Product & Photo Reviews**.
-- Click it, then select **Open App** in the top-right corner.
+<Step icon="store" title="Open Yotpo in Shopify">
 
-_(image)_
+In your **Shopify admin**, go to **Settings > Apps and sales channels**.
 
-### Step 2: Get Your API Credentials
+Under **Installed apps**, find **Yotpo: Product & Photo Reviews**, open it, then click **Open app** in the top right.
 
-In the **Yotpo dashboard sidebar**, go to **Settings \> Store Settings \> API Credentials**.\
-Copy the following values:
+<Frame>
+  <img src="/images/yotpo-shopify-apps.png" alt="Shopify Settings showing Yotpo in installed apps" />
+</Frame>
 
-- **App Key**
-- **Secret Key**
+</Step>
 
-Example URL to help you locate the credentials: `https://admin.shopify.com/store/[your-shopify-subdomain]/apps/yotpo/reviews/settings/api-credentials`
+<Step icon="key" title="Copy your API credentials">
 
-_(image)_
+In the **Yotpo** sidebar, go to **Settings > Store Settings > API Credentials**.
 
-### Step 3: Connect Yotpo in Asa
+Copy both values:
 
-In your **Asa dashboard**, go to **Add Content**, open the **Integrations** tab, and click **Connect** under **Yotpo Product Reviews**.\
-Enter the required fields:
+| Field | Where to find it |
+|---|---|
+| **App Key** | API Credentials page |
+| **Secret Key** | API Credentials page |
 
-- **App Key:** Paste your Yotpo App Key.
-- **Secret Key:** Paste your Yotpo Secret Key.
+Example credentials URL:
 
-Click **Connect** to complete setup.\
-Once connected, the integration status will display as **Connected**.
+`https://admin.shopify.com/store/[your-shopify-subdomain]/apps/yotpo/reviews/settings/api-credentials`
 
-_(image)_
+<Frame>
+  <img src="/images/yotpo-api-credentials.png" alt="Yotpo API Credentials page showing App Key and Secret Key" />
+</Frame>
 
-### Notes
+</Step>
 
-- Double-check that your **App Key** and **Secret Key** are copied correctly — they must match exactly as shown in Yotpo.
-- The Yotpo API keys provide secure, limited access to review data only — safe to use with Asa.
-- If you encounter any issues, contact us at **help@alphablocks.ai** — we’re happy to assist.
+<Step icon="plug" title="Connect Yotpo in Asa">
+
+Navigate to **Add Content** in the sidebar, open the **Apps** tab, and click **Connect** on the **Yotpo** card.
+
+<Frame>
+  <img src="/images/yotpo-connect-dialog.png" alt="Asa Connect to Yotpo dialog with Yotpo App Key and Yotpo Secret fields" />
+</Frame>
+
+Enter the values from Yotpo:
+
+| Field | What to paste |
+|---|---|
+| **Yotpo App Key** | Your App Key from Yotpo |
+| **Yotpo Secret** | Your Secret Key from Yotpo |
+
+Click **Connect**. When setup succeeds, the card shows **Connected**.
+
+<Note>
+Only one reviews app can be connected at a time. If you already use Klaviyo Reviews or Judge.me, disconnect that integration before connecting Yotpo.
+</Note>
+
+</Step>
+
+</Steps>
+
+## Notes
+
+- Copy **App Key** and **Secret Key** exactly as shown in Yotpo — extra spaces break the connection.
+- API credentials give Asa read access to review data only — not full store admin access.
+
+If you need help, reach out at [help@alphablocks.ai](mailto:help@alphablocks.ai).

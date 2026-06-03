@@ -26,11 +26,9 @@
       {
         "group": "Getting started",
         "pages": [
-          "get-started/add-manage-knowledge",
-          "get-started/customize",
-          "get-started/deploy",
-          "get-started/manage-conversations",
-          "get-started/analytics"
+          "get-started/quickstart",
+          "get-started/make-asa-your-own",
+          "get-started/see-asa-working"
         ]
       },
       {
@@ -41,7 +39,8 @@
           "integrations/judge-me",
           "integrations/yotpo",
           "integrations/google-drive",
-          "integrations/klaviyo"
+          "integrations/klaviyo",
+          "integrations/gorgias"
         ]
       },
       {
@@ -63,21 +62,7 @@
           "legal/refunds"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "href": "https://asa.so",
-          "icon": "globe"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://asa.so/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -86,21 +71,24 @@
   "navbar": {
     "links": [
       {
+        "label": "Website",
+        "href": "https://asa.so"
+      },
+      {
+        "label": "Dashboard",
+        "href": "https://asa.alphablocks.ai"
+      },
+      {
         "label": "Support",
         "href": "mailto:hello@alphablocks.ai"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://asa.alphablocks.ai"
-    }
+    ]
   },
   "footer": {
     "socials": {
       "x": "https://twitter.com/AlphablocksAI",
       "linkedin": "https://www.linkedin.com/company/alphablocks",
-      "instagram": "https://www.instagram.com/alphablocksai/"
+      "instagram": "https://www.instagram.com/asadotso/"
     }
   }
 }

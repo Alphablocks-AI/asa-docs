@@ -1,19 +1,70 @@
 ---
-title: "How are knowledge sources counted"
-description: "Guide to understand trained content count"
+title: "How knowledge sources are counted"
+description: "Understand what counts toward your plan's knowledge source limit and how to check usage in the dashboard."
 sidebarTitle: "Trained Content Count"
 ---
 
-Both free and paid Asa plans limit the number of knowledge sources Asa can access as a knowledge base for responding accurately to storefront visitors and customers.
+Every Asa plan caps how many **knowledge sources** Asa can have trained at once. Each trained source is one row in **Manage Content** — except snippets, which are unlimited and do not count.
 
-**<u>Files & Links:</u>** Each file and URL is treated as a single knowledge source.
+<Info>
+Plan limits: **50** (Free), **250** (Starter), **500** (Growth). See [Plans and pricing](/resources/plan-pricing) for the full comparison.
+</Info>
 
-**<u>Integrations:</u>**
+## What counts as one knowledge source
 
-- **Shopify:** Each product, article, page, or policy counts as one knowledge source. Metafields and reviews are included with products, not counted separately.
-- **Notion:** Each page counts as a separate knowledge source.
-- **JudgeMe Product Reviews:** Linked to Shopify products, these are not counted separately and are included with the associated product.
-- **Yotpo product Reviews:** Linked to Shopify products, these are not counted separately and are included with the associated product.
-- **Google Drive:** Each doc/file counts as a separate knowledge source.
+| Source type | How it is counted |
+|---|---|
+| **Files** (PDF, DOCX, CSV, TXT) | One file = one knowledge source when trained |
+| **Websites** (URL) | One URL = one knowledge source when trained |
+| **Shopify — Products** | One product = one knowledge source |
+| **Shopify — Blogs** | One blog article = one knowledge source |
+| **Shopify — Pages** | One Online Store page = one knowledge source |
+| **Shopify — Policies** | One store policy = one knowledge source |
+| **Notion** | One selected page = one knowledge source |
+| **Google Drive** | One doc or file = one knowledge source |
 
-If you’re still having trouble understanding how knowledge sources are counted, feel free to reach out to us at [**help@alphablocks.ai**](mailto:help@alphablocks.ai)** **—our team is happy to assist you promptly!
+When you select content to train, the dashboard shows how many **Knowledge source(s)** you are about to use — for example in the Shopify and Notion selection dialogs.
+
+## What does not count separately
+
+These are included with the parent source, not billed as extra knowledge sources:
+
+| Item | Included with |
+|---|---|
+| **Product metafields** | The Shopify product you trained |
+| **Judge.me reviews** | The linked Shopify product |
+| **Yotpo reviews** | The linked Shopify product |
+| **Klaviyo Reviews** | The linked Shopify product |
+| **Snippets** | Do not count toward your plan limit at all |
+
+<Note>
+Snippets are added under **Add Content > Snippet**. Use them for short FAQs or macros without using plan capacity. You can publish trained snippets as widget FAQs from **Manage Content**.
+</Note>
+
+## Shopify stays in sync without extra sources
+
+When Shopify is connected, product and content updates sync via webhooks. Retraining updates the **same** knowledge source row — it does not create a duplicate count for the same product, page, or article.
+
+<Tip>
+Prefer **Add Content > Apps** (Shopify, Notion, Google Drive) over manual uploads when content lives there already. Integrations keep answers current with less manual re-uploading.
+</Tip>
+
+## Check your usage
+
+Open **Billing** from your account menu (or subscription settings) and find **Usage Summary**. **Total Knowledge Sources** shows trained count versus your plan limit (for example `42 / 250`).
+
+If training is blocked, the dashboard explains how many sources you have left or prompts you to upgrade.
+
+## Plan limits at a glance
+
+| Plan | Knowledge sources |
+|---|---|
+| **Free** | 50 |
+| **Starter** | 250 |
+| **Growth** | 500 |
+
+<Card title="Plans and pricing" href="/resources/plan-pricing" icon="credit-card" horizontal>
+  Conversations, integrations, and feature comparison by plan.
+</Card>
+
+Questions about a specific source? Reach out at [help@alphablocks.ai](mailto:help@alphablocks.ai).
