@@ -1,104 +1,119 @@
 ---
 title: "Make Asa your own"
-description: "Asa works out of the box. This guide is to makes it yours. Matching your brand's look, voice, and behavior."
+description: "Match Asa's look, voice, and handover behavior to your brand — appearance, responses, guidance, and where escalations go."
 ---
 
-Shoppers form an impression of your brand in seconds. Every detail of how Asa looks and responds either reinforces that impression or breaks it. This guide walks you through getting both right.
+Shoppers form an impression of your brand in seconds. How Asa looks and responds either reinforces that impression or breaks it. This guide walks you through both.
 
 <Steps titleSize="h4">
-  <Step icon="palette" title="Set Appearance">
-    Navigate to the **Configuration > Appearance** section in the sidebar.
+  <Step icon="palette" title="Set appearance">
+    Navigate to **Configuration > Appearance** in the sidebar.
 
     <Frame>
-        <img src="/images/customize-appearance.png" alt="Appearance settings showing avatar, theme, widget position, brand color and assistant name fields" />
+      <img src="/images/customize-appearance.png" alt="Appearance settings showing avatar, theme, widget position, brand color and assistant name fields" />
     </Frame>
 
     | Setting | Description |
-    |---|---|
-    | **Avatar** | Upload your brand logo or a recognizable icon. This appears in the chat header and as the widget button on your storefront. |
-    | **Theme** | Match your storefront, not your personal preference. If your store is dark, use dark. Consistency removes friction. |
-    | **Widget Position** | Bottom right works for most stores. Move it to bottom left only if a fixed storefront element — a cart button, a sticky bar — conflicts with it. |
-    | **Brand Color** | Your primary brand HEX. This fills the message bubbles and highlights in the widget. Most merchants use the exact same primary color as their storefront CTA buttons. |
-    | **Assistant Name** | How Asa introduces itself to your shoppers. What works by brand type. For example, *Ask Nike*, *Zara AI*, and so on. |
-    | **Input Placeholder** | Customize chat input placeholder text for when starting a new conversation set — it with intention. For example, *Find your fit...*, *Ask about ingredients, routines, or products...*, and so on.  |
+    | --- | --- |
+    | **Avatar** | Your logo or a recognizable icon. Shown in the chat header and as the widget button on your storefront. |
+    | **Theme** | Match your storefront — use dark if your store is dark. Consistency reduces friction. |
+    | **Widget Position** | Bottom right works for most stores. Use bottom left only if a fixed element (cart button, sticky bar) would overlap the widget. |
+    | **Brand Color** | Primary brand HEX for message bubbles and highlights. Most merchants match their storefront CTA color. |
+    | **Assistant Name** | How Asa introduces itself — for example, *Ask Nike* or *Zara AI*. |
+    | **Input Placeholder** | Placeholder text when a shopper starts a new chat — for example, *Find your fit...* or *Ask about ingredients, routines, or products...*. |
 
     <Note>
-    Use the preview panel on the right to check your changes before saving. Click **Save Changes** in the top right to apply.
+      Use the preview panel on the right before saving. Click **Save Changes** in the top right to apply.
     </Note>
   </Step>
 
-  <Step icon="sliders" title="Configure your responses">
-    Navigate to the **Configuration > Responses** section in the sidebar.
+  <Step icon="sliders" title="Configure responses">
+    Navigate to **Configuration > Responses** in the sidebar. Three tabs control how Asa behaves.
 
     <Tabs>
-    <Tab title="Behaviour">
+      <Tab title="Behaviour">
+        <Frame>
+          <img src="/images/customize-responses.png" alt="Responses Behaviour tab showing response length, tone of voice, and default language" />
+        </Frame>
 
-    <Frame>
-      <img src="/images/customize-responses.png" alt="Responses settings showing tone of voice, response length and human support contact fields" />
-    </Frame>
+        | Setting | Description |
+        | --- | --- |
+        | **Response Length** | How concise or detailed answers are. Preview changes on the right. |
+        | **Tone of Voice** | Brand personality in replies. If unsure, read three strong product descriptions out loud — that tone is usually the right pick. |
+        | **Default Language** | Primary customer language. Asa still adapts to the shopper's language in chat; this is the default only. |
+        | **Proactive Messages** | Helpful prompts while shoppers browse — before they ask. Works well on product pages, cart, and search. |
+        | **Storefront Events** | Tracking for shopper behavior on your store. Turn this on to power proactive messages and contextual replies. |
 
-    | Setting | Description |
-    |---|---|
-    | **Response Length** | How concise or detailed Asa's answers are. Use the preview panel on the right to preview your changes. |
-    | **Tone of Voice** | Pick the tone that fits your brand personality. If you're unsure, read three of your best product descriptions or your blog posts out loud. The tone you hear is the one to pick. |
-    | **Default Language** | Set this to your primary customer language. Asa adapts to the shopper's language in conversation regardless — this is just the default. |
-    | **Human Support Contact** | Define how shoppers reach your team when Asa can't or shouldn't help. Set this before you go live. These conversations are tagged as **redirected** in conversations section. |
-    | **Proactive Messages** | When enabled, Asa surfaces helpful prompts as shoppers browse — even before they ask a question. High-intent moments where it works well: product pages, the cart activities, and search. |
+      </Tab>
 
-    </Tab>
+      <Tab title="Guidance">
+        <Frame>
+          <img src="/images/customize-responses-guidance.png" alt="Responses Guidance tab showing Communication Style and other instruction fields" />
+        </Frame>
 
-    <Tab title="Guidance">
+        Guidance is your brand voice in plain language — not a dropdown. Think of it as the brief you would give a new teammate on day one.
 
-    <Frame>
-      <img src="/images/customize-responses-guidance.png" alt="Responses settings showing tone of voice, response length and human support contact fields" />
-    </Frame>
+        <AccordionGroup>
+          <Accordion title="Communication Style">
+            Set tone, vocabulary, and terminology. Be specific — vague instructions produce vague answers.
 
-    Guidance is where Asa gets your actual brand voice. Not a dropdown — instructions written by you, in plain language. Think of it as the brief you'd give a new team member on their first day.
+            | Brand type | What to write |
+            | --- | --- |
+            | Fashion and apparel | "Use aspirational but accessible language. Refer to products by their full name. Never use slang. Suggest complementary pieces when recommending." |
+            | Health and wellness | "Use warm, science-informed language. Avoid medical claims. Recommend consulting a professional for medical conditions. Use ingredient names accurately." |
+            | Skincare and personal care | "Use clean, ingredient-forward language. Acknowledge concerns with empathy. Never guarantee results — use 'may help' or 'known to support'." |
+          </Accordion>
 
-    <AccordionGroup>
-      <Accordion title="Communication Style">
-        Set the tone, vocabulary, and terminology Asa uses. Be specific. Vague instructions produce vague results.
+          <Accordion title="Context and Clarification">
+            Tell Asa when to ask a follow-up before answering.
 
-        | Brand type | What to write |
-        |---|---|
-        | Fashion and apparel | "Use aspirational but accessible language. Refer to products by their full name. Never use slang. Always suggest complementary pieces when making a recommendation." |
-        | Health and wellness | "Use warm, science-informed language. Avoid making medical claims. Always recommend consulting a healthcare professional for medical conditions. Use ingredient names accurately." |
-        | Skincare and personal care | "Use clean, ingredient-forward language. Acknowledge skin concerns with empathy before recommending. Never guarantee results — use 'may help' or 'known to support'." |
-      </Accordion>
+            Good examples:
+            - "When a shopper asks for a routine, ask skin type and primary concern first."
+            - "When a shopper asks for a size, ask their usual size and preferred brand first."
+            - "When a shopper asks about supplements, ask their health goal before recommending."
+          </Accordion>
 
-      <Accordion title="Context and Clarification">
-        Tell Asa when to ask a follow-up question before answering. This is where you enable an already powerful shopping assistant into a brand-representing intelligence.
+          <Accordion title="Handover to Team">
+            Define what Asa should never handle alone. Asa follows these literally.
 
-        Good examples:
-        - "When a shopper asks for a routine recommendation, ask their skin type and primary concern first."
-        - "When a shopper asks for a size recommendation, ask their usual size and the brand they normally wear."
-        - "When a shopper asks about supplements, ask about their health goal before recommending."
-      </Accordion>
+            Good examples:
+            - "Hand over when a shopper requests a refund or mentions a damaged product."
+            - "Escalate if the issue involves an account, payment, or order that cannot be found."
+            - "Always hand over complaints — never resolve dissatisfaction without a human."
+          </Accordion>
 
-      <Accordion title="Handover to Team">
-        Define the lines Asa should never cross alone. Be explicit — Asa follows these precisely.
+          <Accordion title="Additional Guidelines">
+            Anything else — for example:
+            - "Do not discuss competitor products."
+            - "Add 'Results may vary' when discussing outcomes."
+            - Products to prioritize or avoid in recommendations.
+          </Accordion>
+        </AccordionGroup>
 
-        Good examples:
-        - "Hand over when a shopper requests a refund or mentions a damaged product."
-        - "Escalate if the issue involves an account, payment, or order that cannot be found."
-        - "Always hand over complaints — never attempt to resolve dissatisfaction without a human."
-      </Accordion>
+        <Tip>
+          Each Guidance field has a 1,000 character limit. One clear instruction beats three vague ones.
+        </Tip>
+      </Tab>
 
-      <Accordion title="Additional Guidelines">
-        Anything that doesn't fit above. Common uses:
-        - Topics Asa should never discuss: "Do not discuss competitor products."
-        - Legal disclaimers: "Always add 'Results may vary' when discussing outcomes."
-        - Products to prioritize or avoid in recommendations.
-      </Accordion>
-    </AccordionGroup>
+      <Tab title="Handover">
+        Under **Human Support Contact**, choose where escalations go:
 
-    <Tip>
-    Each Guidance field has a 1000 character limit. Be specific, not exhaustive. One clear instruction beats three vague ones.
-    </Tip>
-    </Tab>
+        | Destination | What it does |
+        | --- | --- |
+        | **Email Contact** | Shoppers see your support email in the widget when Asa hands off. |
+        | **Redirect URL** | Shoppers are sent to your help page or contact form. |
+        | **Gorgias** | Escalations create tickets in Gorgias. See the [Gorgias integration guide](/integrations/gorgias). |
+
+        Set handover before you go live. Those conversations are tagged **Redirected** in **Activity > Conversations**.
+
+        <Note>
+          Click **Save Changes** in the top right after you connect Gorgias or change the destination.
+        </Note>
+      </Tab>
     </Tabs>
+
     <Note>
-    Use the preview panel on the right to check your changes before saving. Click **Save Changes** in the top right to apply.
+      Use the preview panel on the right before saving. Click **Save Changes** in the top right to apply.
     </Note>
   </Step>
 </Steps>

@@ -1,122 +1,128 @@
 ---
 title: "Get Live in 15 Minutes"
-description: "This guide gets you from creating a new account to Asa live on your storefront in minutes."
+description: "Go from a new account to Asa live on your storefront in about 15 minutes."
 ---
 
 <Steps titleSize="h4">
   <Step title="Create your account">
-    Go to [asa.so](https://asa.so) and click **Sign In** in the top right. Create an account with your email and set a password. Complete the account verification steps. When you finish, you land in your Asa dashboard.
-
+    Go to [asa.so](https://asa.so) and click **Sign In** in the top right. Create an account with your email and set a password. Complete account verification. When you finish, you land in your Asa dashboard.
   </Step>
 
   <Step title="Add your content">
-
     Asa answers from what it knows. Go to **Add Content** in the sidebar.
+
     <Frame>
-        <img src="/images/add-content.png" alt="Add Content screen showing Apps, Files, Websites and Snippet tabs" />
+      <img src="/images/add-content.png" alt="Add Content screen showing Apps, Files, Websites and Snippet tabs" />
     </Frame>
 
-    **On Shopify?** Connect it first — it's your most valuable source. Products, pages, policies, and collections sync automatically.
+    **On Shopify?** Connect it first — it is your most valuable source. Train **products**, **blogs**, **pages**, and **policies**; Shopify keeps them in sync after that.
 
-    <Card title="How to connect Shopify" href="/integrations/shopify" arrow="true" icon="shopify" horizontal>
-    Quick setup guide to connect Asa to your Shopify Store to add content
+    <Card title="Connect Shopify" href="/integrations/shopify" arrow="true" icon="shopify" horizontal>
+      Connect your store and choose what Asa should learn from.
     </Card>
 
     **Everything else** — use the tabs across the top:
 
-    | Tab      | What to add                                                          |
-    | -------- | -------------------------------------------------------------------- |
-    | Apps     | Shopify, Notion, Google Drive, Judge.me, Yotpo, Klaviyo Reviews               |
-    | Files    | PDFs, CSVs, Docs — pages, return policies, guides                    |
-    | Websites | Any URL — Asa reads and learns from it                               |
-    | Snippet  | Paste text directly — good for short policies or FAQs |
+    | Tab | What to add |
+    | --- | --- |
+    | **Apps** | Shopify, Notion, Google Drive, Judge.me, Yotpo, Klaviyo Reviews |
+    | **Files** | PDFs, CSVs, Docs — policies, guides, spec sheets |
+    | **Websites** | Any URL Asa can read and learn from |
+    | **Snippet** | Paste text directly — short policies or FAQs |
 
     <Tip>
-    Start with products and policies. They answer the majority of shopper questions. Add everything else after you're live.
+      Start with products and policies. They answer most shopper questions. Add the rest after you are live.
     </Tip>
 
-    Upon connecting Asa to your third party apps and adding content to train from, navigate to **Manage Content** to check training status in real-time.
-
+    After you connect apps or upload content, go to **Manage Content** to watch training status in real time.
   </Step>
-  
+
   <Step title="Confirm your content is trained">
     Go to **Manage Content** in the sidebar. Wait until every source shows **Trained** before moving on.
+
     <Frame>
-        <img src="/images/manage-content.png" alt="Manage Content screen showing trained sources with green status indicators" />
+      <img src="/images/manage-content.png" alt="Manage Content screen showing trained sources with green status indicators" />
     </Frame>
-    Click on **View Content** icon on any trained source to see exactly what Asa extracted from it. If something looks incorrect, delete the source and retrain.
+
+    Click **View content** on any trained row to see what Asa extracted. If something looks wrong, delete the source and retrain.
   </Step>
 
   <Step title="Customize to match your brand">
-  Go to **Configuration** section in the sidebar. You can choose to customize **appearance** and **responses** to match your brand identity.
+    Go to **Configuration** in the sidebar, then **Appearance** or **Responses**.
 
-  <Tabs>
-    <Tab title="Appearance">
-      Set your avatar, brand color, widget position, assistant name, and other appearance attributes. The preview panel on the right updates in real time.
+    <Tabs>
+      <Tab title="Appearance">
+        Set your avatar, brand color, widget position, assistant name, and other appearance settings. The preview panel on the right updates in real time.
 
-      <Frame>
-        <img src="/images/customize-appearance.png" alt="Appearance settings showing avatar, theme, widget position, brand color and assistant name fields" />
-      </Frame>
+        <Frame>
+          <img src="/images/customize-appearance.png" alt="Appearance settings showing avatar, theme, widget position, brand color and assistant name fields" />
+        </Frame>
 
-      <Tip>
-        Set your avatar, brand color and assistant name. Everything else can be customized later on as per your requirements.
-      </Tip>
-    </Tab>
-    <Tab title="Responses">
-      Set your tone of voice, response length, and the handover method for where Asa hands shoppers off to when they need a real person support.
+        <Tip>
+          Set your avatar, brand color, and assistant name first. You can refine the rest later.
+        </Tip>
+      </Tab>
+      <Tab title="Responses">
+        Under **Responses**, use three tabs:
 
-      <Frame>
-        <img src="/images/customize-responses.png" alt="Responses settings showing tone of voice, response length and human support contact fields" />
-      </Frame>
+        - **Behaviour** — tone of voice, response length, proactive messages, and storefront event tracking
+        - **Guidance** — written instructions for how Asa should speak and when to ask follow-ups
+        - **Handover** — where shoppers go when they need a person (email, redirect URL, or [Gorgias](/integrations/gorgias))
 
-      <Tip>
-        For deeper control over how Asa responds, see [Make Asa your own](/get-started/make-asa-your-own).
-      </Tip>
-    </Tab>
+        <Frame>
+          <img src="/images/customize-responses.png" alt="Responses Behaviour tab showing tone of voice and response length settings" />
+        </Frame>
 
-  </Tabs>
-  <Warning>To apply your changes, click **Save Changes** in the top right.</Warning>
-</Step>
+        <Tip>
+          For a full walkthrough, see [Make Asa your own](/get-started/make-asa-your-own).
+        </Tip>
+      </Tab>
+    </Tabs>
 
-<Step title="Deploy to your store">
-  Now that Asa is trained your selected content and customized to match your brand identity, navigate to **Deploy** section via the sidebar and choose your channel to deploy Asa on.
+    <Warning>Click **Save Changes** in the top right to apply your updates.</Warning>
+  </Step>
 
-<Frame>
-  <img
-    src="/images/deploy-screen.png"
-    alt="Deploy screen showing Shopify, HTML/JS, Headless and coming soon channel options"
-  />
-</Frame>
+  <Step title="Deploy to your store">
+    Go to **Configuration > Deploy** in the sidebar. Open the **Channels** tab and choose where Asa should appear.
 
-  <Tabs>
-    <Tab title="Shopify">
+    <Frame>
+      <img
+        src="/images/deploy-screen.png"
+        alt="Deploy Channels screen showing Shopify, HTML/JS, Headless and coming soon options"
+      />
+    </Frame>
+
+    <Tabs>
+      <Tab title="Shopify">
+        <Note>
+          Today, deploy with **Shopify (Custom App)** — paste a snippet in your theme via the theme editor. A Shopify App Store listing is in review; install-from-store deploy will be simpler once it is live.
+        </Note>
+
+        On the **Shopify (Custom App)** card, click **Deploy**. A sidesheet opens with step-by-step instructions. Follow them in order.
+
+        <Frame>
+          <img src="/images/deploy-shopify-screen.png" alt="Shopify Custom App deploy instructions sidesheet" />
+        </Frame>
+      </Tab>
+      <Tab title="Other platforms">
+        Click **Deploy** on the card for your stack:
+
+        - **HTML/JS Website**
+        - **Headless Storefront (NextJS)**
+        - **WhatsApp** (coming soon)
+        - **Instagram** (coming soon)
+        - **Voice** (coming soon)
+      </Tab>
+    </Tabs>
+
+    <Tip>
+      Want to test before going live? Open the **Playground** tab under **Configuration > Deploy**.
+    </Tip>
+
+    After you deploy, open your storefront and ask Asa about a product or policy as a shopper would. You are live.
+
     <Note>
-      Asa deploys on Shopify by pasting a snippet in your theme via the theme editor. A dedicated Shopify App Store listing is currently under review — setup gets even simpler once it is live.
+      The widget can take a moment to appear. Try a hard refresh if you do not see it. Still stuck? [Contact us](mailto:help@alphablocks.ai).
     </Note>
-      Click **Deploy** on the Shopify card. The following sidesheet opens with specific instructions. Follow it properly and in order to ensure correct deployment of Asa on your Shopify Storefront.
-
-      <Frame>
-        <img src="/images/deploy-shopify-screen.png" alt="Shopify deploy instructions screen" />
-      </Frame>
-    </Tab>
-    <Tab title="Other Platforms">
-      Click **Deploy** on other cards to find specific instructions to deploy Asa on:
-      - HTML/CSS/JS Websites
-      - NextJS (Headless Storefronts)
-      - Whatsapp (Coming Soon)
-      - Instagram Messaging (Coming Soon)
-      - Voice (Coming Soon)
-    </Tab>
-
-  </Tabs>
-
-<Tip>
-  Need to test Asa before deploying it on your storefront? Access our playground
-  view via the **Playground** tab in the **Deploy** section.
-</Tip>
-
-After you deploy, open your storefront and ask Asa a question as a shopper about one of your products or policies. You're live.
-<Note> It may take a moment for the widget to appear. If you don't see it, try a hard refresh. Still stuck? [We're here to help](mailto:help@alphablocks.ai).</Note>
-
-</Step>
+  </Step>
 </Steps>
