@@ -10,7 +10,7 @@ Your Shopify catalog is Asa's most important content source. Connect your store,
 
 <Tabs>
 
-<Tab title="Custom app">
+<Tab title="Custom app" id="custom-app">
 
 Use this path now — connect Asa with a **Shopify custom app** and Admin API credentials from the [Shopify Dev Dashboard](https://shopify.dev/docs/apps/build/dev-dashboard).
 
@@ -79,12 +79,14 @@ Connecting Shopify does not train Asa on your catalog yet. You choose what to tr
 
 </Tab>
 
-<Tab title="Shopify app">
+<Tab title="Shopify app" id="shopify-app">
 
 Use this path after the Asa app is live on the [Shopify App Store](https://apps.shopify.com/). It is the simpler install flow once listing approval is complete.
 
 <Warning>
-The Asa Shopify app is currently in App Store review. Until it is approved, follow the **Custom app** tab above.
+**Asa customers:** The Shopify app is still in App Store review and is not available for general use yet. To connect your store today, use the [**Custom app**](#custom-app) tab above.
+
+The steps below walk Shopify App Store reviewers through the install and connect flow. They will apply to all customers once the app is approved.
 </Warning>
 
 <Steps titleSize="h4">
@@ -123,21 +125,27 @@ After sign-in, you land on **Add Content** and the Shopify connection flow opens
 After install, Asa opens the Shopify connection on **Add Content**. You may see one of two dialogs:
 
 **A — Confirmation dialog (most common after App Store install)**  
-A short message confirms your store name. Click **Integrate** to finish the connection.
+The **Connect Asa to Shopify Store** dialog shows which **Asa AI Agent** (by ID) you are connecting and your Shopify store subdomain.
+
+<Note>
+This step is required to enable the Shopify integration in Asa, even if the Asa Shopify app is already installed on your store.
+</Note>
+
+Click **Connect** to finish the connection.
 
 **B — Full connect dialog**  
-If you connect manually from the Shopify card, confirm both fields:
+If you connect manually from the Shopify card, open **Connect to Shopify App** and confirm both fields:
 
 | Field | What to enter |
 |---|---|
-| **Shopify subdomain** | The part before `.myshopify.com` (e.g. `acme` from `acme.myshopify.com`) |
-| **Website link** | Your public storefront URL (e.g. `https://acme.com`) |
+| **Shopify Store Subdomain** | The part before `.myshopify.com` (e.g. `acme` from `acme.myshopify.com`) |
+| **Public Store URL** | Your public storefront URL (e.g. `https://acme.com`) |
 
 <Frame>
-  <img src="/images/shopify-app-connect-dialog.png" alt="Connect to Shopify dialog with Shopify subdomain and Website link fields" />
+  <img src="/images/shopify-app-connect-dialog.png" alt="Connect to Shopify App dialog with Shopify Store Subdomain and Public Store URL fields" />
 </Frame>
 
-Click **Connect** or **Integrate**, depending on which dialog you see.
+Click **Connect**.
 
 - If the Asa app is not installed on that store yet, Asa redirects you to complete Shopify authorization first.
 - When connection succeeds, the Shopify card shows **Connected**.
