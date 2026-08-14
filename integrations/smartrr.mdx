@@ -1,0 +1,64 @@
+---
+title: "Smartrr"
+description: "Connect Smartrr so Asa can answer subscription questions with live account data and let shoppers manage their subscriptions."
+sidebarTitle: "Smartrr"
+---
+
+Smartrr powers subscription status, next order dates, and account actions (pause, skip, cancel, reactivate, and change frequency). Connect it in **Configuration > Integrations**, then enable the skills in **Responses**. This integration requires the **Growth** plan.
+
+<Steps titleSize="h4">
+
+<Step icon="key" title="Create a Smartrr API token">
+
+In Shopify, open the **Smartrr** app. In the left sidebar, go to **Integrations**, then **API Keys**.
+
+Click **Add Key** (or **Create Key**) and give it a nickname such as `ASA`.
+
+Set **Subscriptions** to **Read and Write** so Asa can pause, skip, cancel, reactivate, and change frequency. Leave **Selling Plan** on **Read** if that option is shown.
+
+Create the key and copy the token. You will not be able to view the full token again.
+
+</Step>
+
+<Step icon="plug" title="Connect Smartrr in Asa">
+
+In Asa, go to **Configuration > Integrations**, open **Smartrr**, and click **Connect**.
+
+Paste the token into **Smartrr API Token** and click **Connect**. When setup succeeds, the page shows **Connected**.
+
+<Note>
+Smartrr subscription skills are available on the Growth plan. If Connect is locked, upgrade first.
+</Note>
+
+</Step>
+
+<Step icon="sliders" title="Enable subscription skills">
+
+Still on the Smartrr page, click **Open Skills**, or go to **Configuration > Responses > Skills**.
+
+Turn on the subscription skills you want shoppers to use: pause, skip, cancel, reactivate, and change delivery frequency.
+
+<Check>
+Ask Asa a subscription question on a logged-in storefront session. Asa should return live status or offer the actions you enabled.
+</Check>
+
+</Step>
+
+</Steps>
+
+## What Asa can do after you connect
+
+- **Account data** — live subscription status and next order dates.
+- **Pause and skip** — pause an active subscription or skip the next delivery.
+- **Cancel and reactivate** — cancel an active subscription or resume a paused one.
+- **Frequency** — change delivery frequency (for example 4 weeks to 8 weeks).
+
+Shoppers must be logged in for management actions. Status lookup uses the connected Smartrr account data.
+
+## Notes
+
+- Create the API token in Smartrr (**Integrations > API Keys**), not in Shopify admin settings.
+- If connection fails, generate a new key and confirm **Subscriptions** is set to **Read and Write**.
+- Disconnecting Smartrr turns off live subscription answers until you connect again.
+
+If you need help, reach out at [help@alphablocks.ai](mailto:help@alphablocks.ai).

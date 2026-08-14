@@ -40,7 +40,8 @@
           "integrations/yotpo",
           "integrations/google-drive",
           "integrations/klaviyo",
-          "integrations/gorgias"
+          "integrations/gorgias",
+          "integrations/smartrr"
         ]
       },
       {
